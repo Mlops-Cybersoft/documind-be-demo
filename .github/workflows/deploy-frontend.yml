@@ -3,7 +3,7 @@ name: CICD for frontend to Amazon Cloud
 # Đoạn này khai báo những sự kiện nào sẽ kích hoạt GitHub Actions workflow:
 on:
   # Workflow chạy khi có Pull Request nhắm vào branch deploy.
-  pull_request:
+  push:
     branches: [deploy]
   # workflow_dispatch cho phép bạn chạy workflow thủ công trên giao diện GitHub 
   # mà không cần push code hoặc tạo Pull Request
